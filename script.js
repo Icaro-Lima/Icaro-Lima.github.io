@@ -3,7 +3,7 @@ const projectItems = [
     image: "assets/verilog-playground.gif",
     title: "Verilog Playground",
     description:
-      "In 2018, I built an FPGA board simulator that modernized COA classes at my college, removing board-access bottlenecks and cutting build time from 3+ minutes to about 7 seconds for faster iteration.",
+      "In 2018, I built an FPGA board simulator that modernized COA classes at my college, removing physical board-access bottlenecks and cutting build time from 3+ minutes to about 7 seconds for faster iteration.",
     link: "https://verilog-playground.github.io",
     imageFit: "contain",
   },
