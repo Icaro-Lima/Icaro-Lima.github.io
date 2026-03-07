@@ -5,6 +5,7 @@ const projectItems = [
     description:
       "In 2018, I built an FPGA board simulator that modernized COA classes at my college, removing board-access bottlenecks and cutting build time from 3+ minutes to about 7 seconds for faster iteration.",
     link: "https://verilog-playground.github.io",
+    imageFit: "contain",
   },
   {
     image: "assets/project-1.svg",
@@ -159,10 +160,11 @@ function renderMarkdown(markdown) {
   return chunks.join("\n");
 }
 
-function createCard({ image, title, description, link }) {
+function createCard({ image, title, description, link, imageFit }) {
+  const imageClass = imageFit === "contain" ? "card-image fit-contain" : "card-image";
   return `
     <article class="card">
-      <img class="card-image" src="${image}" alt="${title}" />
+      <img class="${imageClass}" src="${image}" alt="${title}" />
       <div class="card-body">
         <h3 class="card-title">${title}</h3>
         <p class="card-description">${description}</p>

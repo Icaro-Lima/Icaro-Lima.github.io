@@ -201,6 +201,11 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+.card-image.fit-contain {
+  object-fit: contain;
+  background: #0d1117;
+}
+
 .card-body {
   padding: 14px;
 }
