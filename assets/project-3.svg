@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0d1117"/>
+  <rect x="70" y="70" width="660" height="360" rx="18" fill="#161b22" stroke="#30363d"/>
+  <text x="120" y="150" fill="#2f81f7" font-size="44" font-family="monospace">$ run build</text>
+  <text x="120" y="210" fill="#9ba6b2" font-size="34" font-family="monospace">✓ compiled in 128ms</text>
+  <text x="120" y="265" fill="#9ba6b2" font-size="34" font-family="monospace">✓ tests passed</text>
+  <text x="120" y="320" fill="#9ba6b2" font-size="34" font-family="monospace">✓ deployed</text>
+</svg>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ícaro D. Lima</title>
+    <meta
+      name="description"
+      content="Personal website of Ícaro D. Lima with projects, posts, and photos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <main class="container">
+      <section class="profile-card">
+        <img
+          class="profile-image"
+          src="profile_picture.jpg"
+          alt="Profile picture of Ícaro D. Lima"
+        />
+        <div class="profile-meta">
+          <p class="profile-kicker">Software Engineer</p>
+          <h1>Ícaro D. Lima</h1>
+          <p class="profile-summary">
+            I build software, share knowledge, and document what I learn through code, posts, and photos.
+          </p>
+          <nav class="social-links" aria-label="Social media links">
+            <a href="https://github.com/icarodlima" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/icarodlima" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@icarodlima" target="_blank" rel="noreferrer">YouTube</a>
+            <a href="https://www.linkedin.com/in/icarodlima" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://leetcode.com/u/icarodlima" target="_blank" rel="noreferrer">LeetCode</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="content-card">
+        <div class="tabs" role="tablist" aria-label="Website sections">
+          <button class="tab active" role="tab" aria-selected="true" aria-controls="projects-panel" id="projects-tab" data-tab="projects-panel">
+            Projects
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="posts-panel" id="posts-tab" data-tab="posts-panel">
+            Posts
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="photos-panel" id="photos-tab" data-tab="photos-panel">
+            Photos
+          </button>
+        </div>
+
+        <section class="panel active" role="tabpanel" id="projects-panel" aria-labelledby="projects-tab">
+          <div id="projects-grid" class="card-grid"></div>
+        </section>
+
+        <section class="panel" role="tabpanel" id="posts-panel" aria-labelledby="posts-tab" hidden>
+          <div id="posts-list" class="post-list"></div>
+        </section>
+
+        <section class="panel" role="tabpanel" id="photos-panel" aria-labelledby="photos-tab" hidden>
+          <div id="photos-grid" class="card-grid"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
