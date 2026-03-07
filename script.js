@@ -3,31 +3,31 @@ const projectItems = [
     image: "assets/project-1.svg",
     title: "Portfolio API",
     description: "A REST API for project and article management with JWT auth and OpenAPI docs.",
-    link: "https://github.com/icarodlima",
+    link: "https://github.com/Icaro-Lima",
   },
   {
     image: "assets/project-2.svg",
     title: "Design System Kit",
     description: "Reusable UI components and tokens for consistent, accessible web interfaces.",
-    link: "https://github.com/icarodlima",
+    link: "https://github.com/Icaro-Lima",
   },
   {
     image: "assets/project-3.svg",
     title: "CLI Productivity Tools",
     description: "A set of CLI utilities for automating repetitive engineering workflows.",
-    link: "https://github.com/icarodlima",
+    link: "https://github.com/Icaro-Lima",
   },
   {
     image: "assets/project-4.svg",
     title: "Video Automation",
     description: "Batch utilities for preparing and publishing YouTube content efficiently.",
-    link: "https://github.com/icarodlima",
+    link: "https://github.com/Icaro-Lima",
   },
   {
     image: "assets/project-5.svg",
     title: "Interview Prep Dashboard",
     description: "Progress tracker and daily problem planner for coding interviews.",
-    link: "https://leetcode.com/u/icarodlima",
+    link: "https://leetcode.com/u/IcaroDLima",
   },
   {
     image: "assets/project-6.svg",
@@ -45,7 +45,7 @@ const postItems = [
     markdown: `## My LeetCode Routine\n\nI focus on consistency over intensity:\n\n1. Solve 1-2 problems daily\n2. Review old mistakes weekly\n3. Re-implement top patterns from memory\n\nSmall steps compound.`,
   },
   {
-    markdown: `## Useful Dev Links\n\n- GitHub profile: [github.com/icarodlima](https://github.com/icarodlima)\n- LinkedIn: [linkedin.com/in/icarodlima](https://www.linkedin.com/in/icarodlima)\n- YouTube: [youtube.com/@icarodlima](https://www.youtube.com/@icarodlima)`
+    markdown: `## Useful Dev Links\n\n- GitHub profile: [github.com/Icaro-Lima](https://github.com/Icaro-Lima)\n- LinkedIn: [linkedin.com/in/icaro-lima](https://www.linkedin.com/in/icaro-lima)\n- LeetCode: [leetcode.com/u/IcaroDLima](https://leetcode.com/u/IcaroDLima)\n- Thingiverse: [thingiverse.com/icarodlima](https://www.thingiverse.com/icarodlima)\n- YouTube: [youtube.com/@icarodlima](https://www.youtube.com/@icarodlima)`
   },
 ];
 
