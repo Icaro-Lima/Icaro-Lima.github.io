@@ -34,9 +34,11 @@ This version was recognized as a notable project by **veripool.org**.
 ## Article presentations
 
 - **WSCAD 2018 (October 3, 2018, Sao Paulo, Brazil)**  
-  Presented the scientific work **\"Um Simulador Didatico para o Ensino de SystemVerilog\"** (Icaro Lima and Elmar Uwe K. Melcher) as a poster at the Workshop sobre Educacao em Arquitetura de Computadores (WEAC), during the 19th Simposio em Sistemas Computacionais de Alto Desempenho.
+  Presented the scientific work **"Um Simulador Didatico para o Ensino de SystemVerilog"** (Icaro Lima and Elmar Uwe K. Melcher) as a poster at the Workshop sobre Educacao em Arquitetura de Computadores (WEAC), during the 19th Simposio em Sistemas Computacionais de Alto Desempenho.  
+  Certificate: [WSCAD presentation certificate](https://drive.google.com/file/d/1U29l923fmerBr5PVLOVrJKVyEa_-TITV/view?usp=sharing)
 - **Chip in the Fields 2021 / WCAS 2021 (August 23-27, 2021, virtual)**  
-  Received a Certificate of Presentation for **\"Remote FPGA Lab for Distance Learning\"**.
+  Received a Certificate of Presentation for **"Remote FPGA Lab for Distance Learning"**.  
+  Certificate: [WCAS presentation certificate](https://drive.google.com/file/d/1ohSW5d53aWeT0Ny3EczogoNeMmNytrnf/view?usp=sharing)
 
 ## Links
 
