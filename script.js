@@ -1,57 +1,3 @@
-const projectItems = [
-  {
-    image: "assets/verilog-playground.gif",
-    title: "Verilog Playground",
-    startDate: "May, 2018",
-    description:
-      "In 2018, I built an FPGA board simulator that modernized COA classes at my college, removing physical board-access bottlenecks and cutting build time from 3+ minutes to about 7 seconds for faster iteration.",
-    link: "https://verilog-playground.github.io",
-    imageFit: "contain",
-  },
-  {
-    image: "assets/project-1.svg",
-    title: "Portfolio API",
-    startDate: "March, 2024",
-    description: "A REST API for project and article management with JWT auth and OpenAPI docs.",
-    link: "https://github.com/Icaro-Lima",
-  },
-  {
-    image: "assets/project-2.svg",
-    title: "Design System Kit",
-    startDate: "August, 2023",
-    description: "Reusable UI components and tokens for consistent, accessible web interfaces.",
-    link: "https://github.com/Icaro-Lima",
-  },
-  {
-    image: "assets/project-3.svg",
-    title: "CLI Productivity Tools",
-    startDate: "May, 2022",
-    description: "A set of CLI utilities for automating repetitive engineering workflows.",
-    link: "https://github.com/Icaro-Lima",
-  },
-  {
-    image: "assets/project-4.svg",
-    title: "Video Automation",
-    startDate: "November, 2023",
-    description: "Batch utilities for preparing and publishing YouTube content efficiently.",
-    link: "https://github.com/Icaro-Lima",
-  },
-  {
-    image: "assets/project-5.svg",
-    title: "Interview Prep Dashboard",
-    startDate: "February, 2025",
-    description: "Progress tracker and daily problem planner for coding interviews.",
-    link: "https://leetcode.com/u/IcaroDLima",
-  },
-  {
-    image: "assets/project-6.svg",
-    title: "Photo Journal",
-    startDate: "June, 2024",
-    description: "A lightweight media gallery optimized for responsive viewing and quick updates.",
-    link: "https://www.instagram.com/icarodlima",
-  },
-];
-
 const postItems = [
   {
     date: "2026-03-08",
@@ -176,18 +122,19 @@ function renderMarkdown(markdown) {
   return chunks.join("\n");
 }
 
-function createCard({ image, title, startDate, description, link, imageFit }) {
+function createCard({ slug, image, title, startDate, description, imageFit }) {
   const imageClass = imageFit === "contain" ? "card-image fit-contain" : "card-image";
   return `
-    <article class="card">
-      <img class="${imageClass}" src="${image}" alt="${title}" />
-      <div class="card-body">
-        <p class="card-date">Started: ${startDate}</p>
-        <h3 class="card-title">${title}</h3>
-        <p class="card-description">${description}</p>
-        ${link ? `<a class="card-link" href="${link}" target="_blank" rel="noreferrer">Open Project -></a>` : ""}
-      </div>
-    </article>
+    <a class="card-anchor" href="project.html?slug=${encodeURIComponent(slug)}" aria-label="Open project ${title}">
+      <article class="card">
+        <img class="${imageClass}" src="${image}" alt="${title}" />
+        <div class="card-body">
+          <p class="card-date">Started: ${startDate}</p>
+          <h3 class="card-title">${title}</h3>
+          <p class="card-description">${description}</p>
+        </div>
+      </article>
+    </a>
   `;
 }
 
@@ -241,7 +188,7 @@ async function renderContent() {
   const postsList = document.getElementById("posts-list");
   const photosGrid = document.getElementById("photos-grid");
 
-  projectsGrid.innerHTML = projectItems.map(createCard).join("");
+  projectsGrid.innerHTML = (window.projectItems || []).map(createCard).join("");
   photosGrid.innerHTML = photoItems.map(createPhotoCard).join("");
   await renderPosts(postsList);
 }

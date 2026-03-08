@@ -14,9 +14,13 @@ Personal website for **Ícaro D. Lima** hosted on GitHub Pages (`icarodlima.com`
 ## Project structure
 
 - `index.html`: page structure + profile/social links.
+- `project.html`: dedicated project detail page.
 - `styles.css`: layout, colors, responsive behavior.
-- `script.js`: content arrays and rendering for Projects, Posts, and Photos.
+- `projects-data.js`: project cards metadata shared by home/detail pages.
+- `script.js`: rendering for home tabs (Projects, Posts, Photos).
+- `project.js`: rendering logic for the dedicated project page.
 - `posts/`: markdown files used by the Posts tab.
+- `projects/`: markdown files used by project detail pages.
 - `assets/`: images used by cards and placeholders.
 - `.github/workflows/deploy.yml`: GitHub Pages deployment workflow.
 - `CNAME`: custom domain (`icarodlima.com`).
@@ -25,21 +29,24 @@ Personal website for **Ícaro D. Lima** hosted on GitHub Pages (`icarodlima.com`
 
 ### 1) Add or edit projects
 
-Edit the `projectItems` array in `script.js`. Each project card uses:
+Edit the `projectItems` array in `projects-data.js`. Each project card uses:
 
 ```js
 {
+  slug: "project-slug",
   image: "assets/project-x.svg",
   title: "Project title",
-  startDate: "2026",
+  startDate: "January, 2026",
+  endDate: "March, 2026", // optional
   description: "Small description",
-  link: "https://project-link"
+  detailsFile: "projects/project-slug.md"
 }
 ```
 
 - Add a new object to create a new card.
 - Put your project image in `assets/` and reference it in `image`.
-- If needed, set `link: ""` to hide the project link button.
+- Create the extended markdown description file in `projects/`.
+- Each project card is clickable and opens `project.html?slug=...`.
 
 ### 2) Add or edit posts
 
