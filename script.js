@@ -2,6 +2,7 @@ const projectItems = [
   {
     image: "assets/verilog-playground.gif",
     title: "Verilog Playground",
+    startDate: "2018",
     description:
       "In 2018, I built an FPGA board simulator that modernized COA classes at my college, removing physical board-access bottlenecks and cutting build time from 3+ minutes to about 7 seconds for faster iteration.",
     link: "https://verilog-playground.github.io",
@@ -10,36 +11,42 @@ const projectItems = [
   {
     image: "assets/project-1.svg",
     title: "Portfolio API",
+    startDate: "2024",
     description: "A REST API for project and article management with JWT auth and OpenAPI docs.",
     link: "https://github.com/Icaro-Lima",
   },
   {
     image: "assets/project-2.svg",
     title: "Design System Kit",
+    startDate: "2023",
     description: "Reusable UI components and tokens for consistent, accessible web interfaces.",
     link: "https://github.com/Icaro-Lima",
   },
   {
     image: "assets/project-3.svg",
     title: "CLI Productivity Tools",
+    startDate: "2022",
     description: "A set of CLI utilities for automating repetitive engineering workflows.",
     link: "https://github.com/Icaro-Lima",
   },
   {
     image: "assets/project-4.svg",
     title: "Video Automation",
+    startDate: "2023",
     description: "Batch utilities for preparing and publishing YouTube content efficiently.",
     link: "https://github.com/Icaro-Lima",
   },
   {
     image: "assets/project-5.svg",
     title: "Interview Prep Dashboard",
+    startDate: "2025",
     description: "Progress tracker and daily problem planner for coding interviews.",
     link: "https://leetcode.com/u/IcaroDLima",
   },
   {
     image: "assets/project-6.svg",
     title: "Photo Journal",
+    startDate: "2024",
     description: "A lightweight media gallery optimized for responsive viewing and quick updates.",
     link: "https://www.instagram.com/icarodlima",
   },
@@ -47,12 +54,15 @@ const projectItems = [
 
 const postItems = [
   {
+    date: "2026-03-08",
     markdown: `## Shipping Clean Frontend Code\n\nA workflow that works for me:\n\n- Start with semantic HTML and real content before styling\n- Keep components small and purpose-driven\n- Write tests for high-risk behavior, not every line\n\nReadability is a feature.`,
   },
   {
+    date: "2026-03-07",
     markdown: `## My LeetCode Routine\n\nI focus on consistency over intensity:\n\n1. Solve 1-2 problems daily\n2. Review old mistakes weekly\n3. Re-implement top patterns from memory\n\nSmall steps compound.`,
   },
   {
+    date: "2026-03-06",
     markdown: `## Useful Dev Links\n\n- GitHub profile: [github.com/Icaro-Lima](https://github.com/Icaro-Lima)\n- LinkedIn: [linkedin.com/in/icaro-lima](https://www.linkedin.com/in/icaro-lima)\n- LeetCode: [leetcode.com/u/IcaroDLima](https://leetcode.com/u/IcaroDLima)\n- Thingiverse: [thingiverse.com/icarodlima](https://www.thingiverse.com/icarodlima)\n- YouTube: [youtube.com/@icarodlima](https://www.youtube.com/@icarodlima)`
   },
 ];
@@ -60,26 +70,32 @@ const postItems = [
 const photoItems = [
   {
     image: "assets/photo-1.svg",
+    date: "2026-02-14",
     description: "Evening city walk and ambient lights.",
   },
   {
     image: "assets/photo-2.svg",
+    date: "2026-02-03",
     description: "Morning coffee and a clean desk setup.",
   },
   {
     image: "assets/photo-3.svg",
+    date: "2026-01-27",
     description: "Weekend trail with a wide sunset horizon.",
   },
   {
     image: "assets/photo-4.svg",
+    date: "2026-01-18",
     description: "A candid black-and-white street portrait.",
   },
   {
     image: "assets/photo-5.svg",
+    date: "2025-12-30",
     description: "Architecture detail from a downtown building.",
   },
   {
     image: "assets/photo-6.svg",
+    date: "2025-12-22",
     description: "Night skyline shot from a rooftop.",
   },
 ];
@@ -160,12 +176,13 @@ function renderMarkdown(markdown) {
   return chunks.join("\n");
 }
 
-function createCard({ image, title, description, link, imageFit }) {
+function createCard({ image, title, startDate, description, link, imageFit }) {
   const imageClass = imageFit === "contain" ? "card-image fit-contain" : "card-image";
   return `
     <article class="card">
       <img class="${imageClass}" src="${image}" alt="${title}" />
       <div class="card-body">
+        <p class="card-date">Started: ${startDate}</p>
         <h3 class="card-title">${title}</h3>
         <p class="card-description">${description}</p>
         ${link ? `<a class="card-link" href="${link}" target="_blank" rel="noreferrer">Open Project -></a>` : ""}
@@ -174,20 +191,22 @@ function createCard({ image, title, description, link, imageFit }) {
   `;
 }
 
-function createPhotoCard({ image, description }, index) {
+function createPhotoCard({ image, date, description }, index) {
   return `
     <article class="card">
       <img class="card-image" src="${image}" alt="Photo ${index + 1}" />
       <div class="card-body">
+        <p class="card-date">${date}</p>
         <p class="card-description">${description}</p>
       </div>
     </article>
   `;
 }
 
-function createPostCard({ markdown }) {
+function createPostCard({ date, markdown }) {
   return `
     <article class="post-card">
+      <p class="post-date">${date}</p>
       ${renderMarkdown(markdown)}
     </article>
   `;

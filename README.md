@@ -30,6 +30,7 @@ Edit the `projectItems` array in `script.js`. Each project card uses:
 {
   image: "assets/project-x.svg",
   title: "Project title",
+  startDate: "2026",
   description: "Small description",
   link: "https://project-link"
 }
@@ -45,6 +46,7 @@ Edit the `postItems` array in `script.js`. Each post uses:
 
 ```js
 {
+  date: "2026-03-08",
   markdown: `## Post title
 
 Your markdown content here.`
@@ -66,6 +68,7 @@ Edit the `photoItems` array in `script.js`. Each photo card uses:
 ```js
 {
   image: "assets/photo-x.jpg",
+  date: "2026-03-08",
   description: "Small caption"
 }
 ```

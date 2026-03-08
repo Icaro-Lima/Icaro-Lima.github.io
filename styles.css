@@ -215,6 +215,15 @@ body {
   font-size: 1rem;
 }
 
+.card-date,
+.post-date {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .card-description {
   color: var(--muted);
   margin: 0;
