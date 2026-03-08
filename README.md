@@ -16,6 +16,7 @@ Personal website for **Ícaro D. Lima** hosted on GitHub Pages (`icarodlima.com`
 - `index.html`: page structure + profile/social links.
 - `styles.css`: layout, colors, responsive behavior.
 - `script.js`: content arrays and rendering for Projects, Posts, and Photos.
+- `posts/`: markdown files used by the Posts tab.
 - `assets/`: images used by cards and placeholders.
 - `.github/workflows/deploy.yml`: GitHub Pages deployment workflow.
 - `CNAME`: custom domain (`icarodlima.com`).
@@ -47,11 +48,11 @@ Edit the `postItems` array in `script.js`. Each post uses:
 ```js
 {
   date: "2026-03-08",
-  markdown: `## Post title
-
-Your markdown content here.`
+  file: "posts/post-file-name.md"
 }
 ```
+
+Then create or edit the markdown file in `posts/`.
 
 Supported markdown:
 
@@ -84,7 +85,13 @@ Edit the `photoItems` array in `script.js`. Each photo card uses:
 
 ## Local preview
 
-Open `index.html` in your browser.
+Run a local web server and open it in your browser:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`.
 
 ## Deploy (GitHub Pages)
 

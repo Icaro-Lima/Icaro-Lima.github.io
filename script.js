@@ -55,15 +55,15 @@ const projectItems = [
 const postItems = [
   {
     date: "2026-03-08",
-    markdown: `## Shipping Clean Frontend Code\n\nA workflow that works for me:\n\n- Start with semantic HTML and real content before styling\n- Keep components small and purpose-driven\n- Write tests for high-risk behavior, not every line\n\nReadability is a feature.`,
+    file: "posts/shipping-clean-frontend-code.md",
   },
   {
     date: "2026-03-07",
-    markdown: `## My LeetCode Routine\n\nI focus on consistency over intensity:\n\n1. Solve 1-2 problems daily\n2. Review old mistakes weekly\n3. Re-implement top patterns from memory\n\nSmall steps compound.`,
+    file: "posts/my-leetcode-routine.md",
   },
   {
     date: "2026-03-06",
-    markdown: `## Useful Dev Links\n\n- GitHub profile: [github.com/Icaro-Lima](https://github.com/Icaro-Lima)\n- LinkedIn: [linkedin.com/in/icaro-lima](https://www.linkedin.com/in/icaro-lima)\n- LeetCode: [leetcode.com/u/IcaroDLima](https://leetcode.com/u/IcaroDLima)\n- Thingiverse: [thingiverse.com/icarodlima](https://www.thingiverse.com/icarodlima)\n- YouTube: [youtube.com/@icarodlima](https://www.youtube.com/@icarodlima)`
+    file: "posts/useful-dev-links.md",
   },
 ];
 
@@ -212,14 +212,38 @@ function createPostCard({ date, markdown }) {
   `;
 }
 
-function renderContent() {
+async function loadPostMarkdown(file) {
+  const response = await fetch(file, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Unable to load post file: ${file}`);
+  }
+  return response.text();
+}
+
+async function renderPosts(postsList) {
+  const postCards = await Promise.all(
+    postItems.map(async (post) => {
+      try {
+        const markdown = await loadPostMarkdown(post.file);
+        return createPostCard({ ...post, markdown });
+      } catch (error) {
+        const fallback = "## Post unavailable\n\nThis post could not be loaded right now.";
+        return createPostCard({ ...post, markdown: fallback });
+      }
+    })
+  );
+
+  postsList.innerHTML = postCards.join("");
+}
+
+async function renderContent() {
   const projectsGrid = document.getElementById("projects-grid");
   const postsList = document.getElementById("posts-list");
   const photosGrid = document.getElementById("photos-grid");
 
   projectsGrid.innerHTML = projectItems.map(createCard).join("");
-  postsList.innerHTML = postItems.map(createPostCard).join("");
   photosGrid.innerHTML = photoItems.map(createPhotoCard).join("");
+  await renderPosts(postsList);
 }
 
 function setupTabs() {
