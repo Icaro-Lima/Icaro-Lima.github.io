@@ -2,14 +2,17 @@ const postItems = [
   {
     date: "2026-03-08",
     file: "posts/shipping-clean-frontend-code.md",
+    placeholder: true,
   },
   {
     date: "2026-03-07",
     file: "posts/my-leetcode-routine.md",
+    placeholder: true,
   },
   {
     date: "2026-03-06",
     file: "posts/useful-dev-links.md",
+    placeholder: true,
   },
 ];
 
@@ -18,31 +21,37 @@ const photoItems = [
     image: "assets/photo-1.svg",
     date: "2026-02-14",
     description: "Evening city walk and ambient lights.",
+    placeholder: true,
   },
   {
     image: "assets/photo-2.svg",
     date: "2026-02-03",
     description: "Morning coffee and a clean desk setup.",
+    placeholder: true,
   },
   {
     image: "assets/photo-3.svg",
     date: "2026-01-27",
     description: "Weekend trail with a wide sunset horizon.",
+    placeholder: true,
   },
   {
     image: "assets/photo-4.svg",
     date: "2026-01-18",
     description: "A candid black-and-white street portrait.",
+    placeholder: true,
   },
   {
     image: "assets/photo-5.svg",
     date: "2025-12-30",
     description: "Architecture detail from a downtown building.",
+    placeholder: true,
   },
   {
     image: "assets/photo-6.svg",
     date: "2025-12-22",
     description: "Night skyline shot from a rooftop.",
+    placeholder: true,
   },
 ];
 
@@ -122,14 +131,16 @@ function renderMarkdown(markdown) {
   return chunks.join("\n");
 }
 
-function createCard({ slug, image, title, startDate, description, imageFit }) {
+function createCard({ slug, image, title, startDate, description, imageFit, placeholder }) {
   const imageClass = imageFit === "contain" ? "card-image fit-contain" : "card-image";
+  const placeholderBadge = placeholder ? `<span class="content-tag">Placeholder</span>` : "";
   return `
     <a class="card-anchor" href="project.html?slug=${encodeURIComponent(slug)}" aria-label="Open project ${title}">
       <article class="card">
         <img class="${imageClass}" src="${image}" alt="${title}" />
         <div class="card-body">
           <p class="card-date">Started: ${startDate}</p>
+          ${placeholderBadge}
           <h3 class="card-title">${title}</h3>
           <p class="card-description">${description}</p>
         </div>
@@ -138,22 +149,26 @@ function createCard({ slug, image, title, startDate, description, imageFit }) {
   `;
 }
 
-function createPhotoCard({ image, date, description }, index) {
+function createPhotoCard({ image, date, description, placeholder }, index) {
+  const placeholderBadge = placeholder ? `<span class="content-tag">Placeholder</span>` : "";
   return `
     <article class="card">
       <img class="card-image" src="${image}" alt="Photo ${index + 1}" />
       <div class="card-body">
         <p class="card-date">${date}</p>
+        ${placeholderBadge}
         <p class="card-description">${description}</p>
       </div>
     </article>
   `;
 }
 
-function createPostCard({ date, markdown }) {
+function createPostCard({ date, markdown, placeholder }) {
+  const placeholderBadge = placeholder ? `<span class="content-tag">Placeholder</span>` : "";
   return `
     <article class="post-card">
       <p class="post-date">${date}</p>
+      ${placeholderBadge}
       ${renderMarkdown(markdown)}
     </article>
   `;

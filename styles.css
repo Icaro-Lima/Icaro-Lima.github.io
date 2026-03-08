@@ -147,6 +147,16 @@ body {
   padding: 22px;
 }
 
+.wip-banner {
+  border: 1px solid #8b6f2f;
+  background: rgba(187, 128, 9, 0.15);
+  color: #f3d898;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  font-size: 0.92rem;
+}
+
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -238,6 +248,20 @@ body {
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+}
+
+.content-tag {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid #8b6f2f;
+  background: rgba(187, 128, 9, 0.15);
+  color: #f3d898;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .card-description {

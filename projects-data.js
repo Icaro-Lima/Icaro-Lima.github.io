@@ -16,6 +16,7 @@ const projectItems = [
     startDate: "March, 2024",
     description: "A REST API for project and article management with JWT auth and OpenAPI docs.",
     detailsFile: "projects/portfolio-api.md",
+    placeholder: true,
   },
   {
     slug: "design-system-kit",
@@ -24,6 +25,7 @@ const projectItems = [
     startDate: "August, 2023",
     description: "Reusable UI components and tokens for consistent, accessible web interfaces.",
     detailsFile: "projects/design-system-kit.md",
+    placeholder: true,
   },
   {
     slug: "cli-productivity-tools",
@@ -32,6 +34,7 @@ const projectItems = [
     startDate: "May, 2022",
     description: "A set of CLI utilities for automating repetitive engineering workflows.",
     detailsFile: "projects/cli-productivity-tools.md",
+    placeholder: true,
   },
   {
     slug: "video-automation",
@@ -40,6 +43,7 @@ const projectItems = [
     startDate: "November, 2023",
     description: "Batch utilities for preparing and publishing YouTube content efficiently.",
     detailsFile: "projects/video-automation.md",
+    placeholder: true,
   },
   {
     slug: "interview-prep-dashboard",
@@ -48,6 +52,7 @@ const projectItems = [
     startDate: "February, 2025",
     description: "Progress tracker and daily problem planner for coding interviews.",
     detailsFile: "projects/interview-prep-dashboard.md",
+    placeholder: true,
   },
   {
     slug: "photo-journal",
@@ -56,6 +61,7 @@ const projectItems = [
     startDate: "June, 2024",
     description: "A lightweight media gallery optimized for responsive viewing and quick updates.",
     detailsFile: "projects/photo-journal.md",
+    placeholder: true,
   },
 ];
 
