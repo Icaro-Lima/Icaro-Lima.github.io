@@ -1,6 +1,6 @@
 ## Project overview
 
-This project evolved through 3 major versions created to improve Computer Organization and Architecture (COA) classes and make digital design practice more accessible.
+In 2018, I built an FPGA board simulator that modernized COA classes at my college, removing physical board-access bottlenecks and cutting build time from 3+ minutes to about 7 seconds for faster iteration.
 
 ## Version 1: FPGA Board Simulator
 

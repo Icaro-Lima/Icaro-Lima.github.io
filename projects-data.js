@@ -5,7 +5,7 @@ const projectItems = [
     title: "Verilog Playground",
     startDate: "May, 2018",
     description:
-      "A 3-version evolution (FPGA Board Simulator -> Learn SystemVerilog -> Verilog Playground) that expanded access to COA practice and cut compilation time from 3+ minutes to ~7 seconds.",
+      "In 2018, I built an FPGA board simulator that modernized COA classes at my college, removing physical board-access bottlenecks and cutting build time from 3+ minutes to about 7 seconds for faster iteration.",
     detailsFile: "projects/verilog-playground.md",
     imageFit: "contain",
   },
