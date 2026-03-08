@@ -1,6 +1,7 @@
 ## Project overview
 
-In 2018, I built an FPGA board simulator that modernized COA classes at my college, removing physical board-access bottlenecks and cutting build time from 3+ minutes to about 7 seconds for faster iteration.
+In 2018, I built an FPGA board simulator that modernized COA classes at my college, removing physical board-access bottlenecks and cutting build time from 3+ minutes to about 7 seconds for faster iteration.  
+Over time, this work evolved into 3 major versions, detailed in the next sections.
 
 ## Version 1: FPGA Board Simulator
 
