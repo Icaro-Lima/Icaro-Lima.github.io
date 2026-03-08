@@ -31,6 +31,13 @@ This version was recognized as a notable project by **veripool.org**.
 - Enabled browser-based learning and broader device accessibility.
 - Improved teaching workflows for professors in COA courses.
 
+## Article presentations
+
+- **WSCAD 2018 (October 3, 2018, Sao Paulo, Brazil)**  
+  Presented the scientific work **\"Um Simulador Didatico para o Ensino de SystemVerilog\"** (Icaro Lima and Elmar Uwe K. Melcher) as a poster at the Workshop sobre Educacao em Arquitetura de Computadores (WEAC), during the 19th Simposio em Sistemas Computacionais de Alto Desempenho.
+- **Chip in the Fields 2021 / WCAS 2021 (August 23-27, 2021, virtual)**  
+  Received a Certificate of Presentation for **\"Remote FPGA Lab for Distance Learning\"**.
+
 ## Links
 
 - Verilog Playground website: [verilog-playground.github.io](https://verilog-playground.github.io)
