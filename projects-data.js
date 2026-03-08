@@ -58,3 +58,5 @@ const projectItems = [
     detailsFile: "projects/photo-journal.md",
   },
 ];
+
+window.projectItems = projectItems;
