@@ -1,23 +1,23 @@
 # Política de Privacidade
 
-**Aplicativo:** Simulados Arrais e Motonauta - Tenente Flávio  
-**Responsável/Publicador:** Icaro D. Lima / Ícaro Lima  
+**Aplicativo:** Simulados Tenente Flávio  
+**Publicado por:** Ícaro Lima  
 **Última atualização:** 25 de julho de 2026
 
-Esta Política de Privacidade explica como o aplicativo **Simulados Arrais e Motonauta - Tenente Flávio**, publicado por **Icaro D. Lima / Ícaro Lima**, coleta, usa e protege informações dos usuários em Android, iOS e, futuramente, Web.
+Esta Política de Privacidade explica como o aplicativo **Simulados Tenente Flávio**, publicado por **Ícaro Lima**, coleta, usa e protege informações dos usuários em Android e iOS.
 
 Ao usar o aplicativo, você concorda com as práticas descritas nesta Política.
 
 ## 1. Resumo
 
-O aplicativo foi criado para ajudar estudantes a praticarem simulados e questões preparatórias para exames de Arrais Amador e Motonauta.
+O aplicativo foi criado para ajudar estudantes a praticarem simulados e questões preparatórias para exames náuticos.
 
 Atualmente, o aplicativo:
 
 - não exige criação de conta;
 - não possui anúncios;
 - permite uso gratuito com limitações;
-- oferece ou poderá oferecer assinatura para liberar recursos premium;
+- oferece assinatura para liberar recursos premium;
 - salva dados de simulados no próprio dispositivo do usuário;
 - poderá usar ferramentas de análise, como PostHog, para entender o uso do aplicativo e melhorar a experiência.
 
@@ -49,7 +49,7 @@ O aplicativo pode salvar informações sobre simulados realizados, incluindo:
 
 Essas informações são usadas para mostrar o histórico e permitir revisão posterior pelo próprio usuário.
 
-No estágio atual do aplicativo, esse histórico é salvo localmente no dispositivo. Caso, no futuro, sejam criadas contas de usuário ou sincronização em nuvem, esta Política será atualizada.
+Esse histórico é salvo localmente no dispositivo.
 
 ### 2.3. Dados de assinatura e compras
 
@@ -70,7 +70,7 @@ Podemos receber informações necessárias para verificar se uma assinatura est�
 
 ## 3. Assinaturas, renovação e cancelamento
 
-Recursos premium podem ser oferecidos por assinatura mensal, anual, vitalícia ou outros planos disponibilizados no aplicativo.
+Recursos premium podem ser oferecidos por assinatura mensal, anual, compra vitalícia ou outros planos disponibilizados no aplicativo.
 
 Assinaturas recorrentes, quando oferecidas, podem ser renovadas automaticamente pela loja de aplicativos até que sejam canceladas pelo usuário. O preço, período de cobrança, benefícios incluídos e condições de renovação devem ser exibidos antes da confirmação da compra.
 
@@ -134,8 +134,6 @@ Atualmente, o aplicativo não exige login nem criação de conta.
 
 Isso significa que recursos como assinatura e acesso premium podem depender dos identificadores fornecidos pela loja de aplicativos ou pelo serviço de assinatura.
 
-Se no futuro adicionarmos contas de usuário, autenticação ou sincronização entre dispositivos, esta Política será atualizada antes ou junto com a disponibilização desses recursos.
-
 ## 9. Armazenamento e segurança
 
 Adotamos medidas razoáveis para proteger as informações do usuário contra acesso não autorizado, perda, uso indevido ou alteração.
@@ -172,22 +170,16 @@ O aplicativo é voltado para pessoas interessadas em estudar para exames náutic
 
 Se identificarmos coleta indevida de dados de crianças sem autorização adequada, tomaremos medidas razoáveis para remover essas informações.
 
-## 13. Web
-
-Caso o aplicativo seja disponibilizado na Web, poderemos usar tecnologias compatíveis com navegador, como armazenamento local, cookies técnicos ou ferramentas de análise, para manter preferências, histórico, sessão, assinatura ou métricas de uso.
-
-Se o funcionamento Web envolver coleta adicional de dados, esta Política será atualizada.
-
-## 14. Alterações nesta Política
+## 13. Alterações nesta Política
 
 Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças no aplicativo, em tecnologias usadas, em requisitos legais ou em práticas de negócio.
 
 A versão mais recente estará disponível no local onde esta Política for publicada. A data de atualização será sempre indicada no início do documento.
 
-## 15. Contato
+## 14. Contato
 
 Em caso de dúvidas, solicitações ou preocupações sobre privacidade, entre em contato:
 
-**E-mail:** TODO: inserir e-mail de suporte/privacidade
+**E-mail:** icarodantas.lima+simulados-tenente-flavio@gmail.com
 
 **URL desta Política:** [https://icarodlima.com/privacy-policies/simulados-tenente-flavio](https://icarodlima.com/privacy-policies/simulados-tenente-flavio)
