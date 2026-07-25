@@ -319,6 +319,10 @@ body {
   width: min(920px, 92vw);
 }
 
+.policy-page {
+  width: min(920px, 92vw);
+}
+
 .back-link {
   display: inline-block;
   margin-bottom: 16px;
@@ -379,6 +383,73 @@ body {
 
 .project-markdown a {
   color: var(--accent);
+}
+
+.policy-card {
+  padding: 24px;
+}
+
+.policy-content {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-soft);
+  padding: clamp(18px, 4vw, 36px);
+}
+
+.policy-content h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.05;
+  margin: 0 0 18px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 18px;
+}
+
+.policy-content h2,
+.policy-content h3 {
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.2;
+}
+
+.policy-content h2 {
+  margin: 30px 0 10px;
+  font-size: 1.35rem;
+}
+
+.policy-content h3 {
+  margin: 22px 0 8px;
+  font-size: 1.08rem;
+}
+
+.policy-content p,
+.policy-content li {
+  color: var(--muted);
+}
+
+.policy-content p {
+  margin: 0 0 12px;
+}
+
+.policy-content ul {
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+
+.policy-content li {
+  margin-bottom: 6px;
+}
+
+.policy-content strong {
+  color: var(--text);
+}
+
+.policy-content a {
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+
+.policy-loading {
+  margin: 0;
 }
 
 @media (max-width: 960px) {
